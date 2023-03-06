@@ -1,0 +1,19 @@
+<select name="cursos" id=""> <!--le indica al cliente un input de tipo selector donde el usuario podra seleccionar opciones-->
+  <option value="React">React</option> <!--muestra la opcion valida en un selector-->
+  <option value="Express">Express</option>
+  <option value="Nest">Nest</option>
+  <option value="Vue">Vue</option>
+  <option value="Angular">Angular</option>
+  <option value="Node">Node</option>
+</select>
+
+<!--Mejor opcion para el usuario con buenas practicas-->
+<input list="cursos" /> <!--con el atributo list el campo input tendra una optimizacion, permitiendonos escribir y seleccionar en el mismo campo-->
+<datalist id="cursos"> <!--con la etiqueta datalist se agregaran las opciones validas para que el usuario pueda elegir-->
+  <option value="React">React</option>
+  <option value="Express">Express</option>
+  <option value="Nest">Nest</option>
+  <option value="Vue">Vue</option>
+  <option value="Angular">Angular</option>
+  <option value="Node">Node</option>
+</datalist>
