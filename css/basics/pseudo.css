@@ -1,0 +1,33 @@
+.main-nav {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  background-color: #13a4a4;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+/* Esto se conoce como ser especifico */
+.main-nav__item a {
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+  
+/* Las pseudoclases estilizan un estado de un elemento */
+.main-nav__item a :hover {
+  color: blue;
+}
+
+.main-nav__item a :active {
+  color: red;
+}
+
+
+/* Los pseudoelementos estilizan una parte de un elemento o un elemento en particular */
+.main-nav__item a ::after {
+  content: " | ";
+}

@@ -1,0 +1,49 @@
+/*
+
+El navegador por defecto le da estilos a las etiquetas que suelen
+complicar la manipulacion del modelo de caja a los novatos que no
+saben como afrentar esto, para corregir eso se utilizan las sgts
+reglas de css:
+
+*/
+
+* {
+  box-sizing: border-box;
+  /* 
+
+  Genera una suma automatica entre el padding y el contents del
+  contenedor pero como utilizamos el selector universal esto se
+  aplicara a toda la pagina. Hay que tener en cuenta que esta suma
+  automatica solo sera entre el padding y el content, si excedemos
+  las dimenciones con otra parte del modelo de caja entonces nos
+  generara el scroll que estamos evitando.  
+
+  */
+  
+  padding: 0;
+  /*
+
+  Con paggin 0 eliminaremos el espacio que hay hacia dentro del
+  contenedor, al eliminar el padding por defecto ya no nos tendremos
+  que preocupar en sumar el padding que el navedor aplica de forma
+  automatica
+  
+  */
+  
+  margin: 0;
+  /* 
+
+  Con el margin 0 podremos eliminar el margin por defecto que el
+  navegador aplica a los elementos en css, asi como lo hacemos con
+  padding 0. Asi ya no nostendremos que preocupar de esto. 
+  
+  */
+}
+
+main {
+  width: 100%; /* define el ancho del contenido */
+  height: 500px; /* define el alto del contenido */
+  padding: 20px 35px; /* es un espacio hacia dentro del contenedor */
+  border: 10px solid grey; /* linea que define el limite del contenedor */
+  margin: 5px 5px 5px 5px /* es un espacio hacia fuera del contenedor */
+}
