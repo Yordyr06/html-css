@@ -1,0 +1,72 @@
+/* 
+
+Orden de declaración en .css
+
+  Importancia
+  Especificidad
+  Orden de fuente
+  Importancia.
+
+Hoja de estilo de agente de usuario (Estilos del navegador):
+primero el navegador va a implementar los estilos que
+ya trae por defecto
+
+Declaraciones normales en hojas de estilo de autor
+(nuestro .css) que son los estilos que nosotros
+colocamos en nuestro proyecto.
+
+Declaraciones importantes en hojas de estilos de autor
+(utilizar el !important)
+
+Especificidad: el orden de importancia es:
+  !important
+  Iniline styles
+  #id
+  .class
+  tag
+
+  Para evitar rescribir estilos y que se rompa nuestro
+código tenemos que evitar los !important, Iniline styles,
+#id y tag.
+
+Orden de la fuente:
+las declaraciones finales son las que se se van a ejecutar
+en el caso que los estilos tienen la misma especificidad
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: purple;
+  font-family: serif;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 18px;
+  font-family: monospace;
+}
+.nav {
+  margin-top: 10px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  color: white;
+  background-color: #13a4a4;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.nav .blog {
+  background-color: red;
+}

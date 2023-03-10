@@ -1,0 +1,19 @@
+/* Combinador hermano sercano */
+h2 + p {
+  color: red;
+}
+
+/* Combinador hermano general */
+h2 ~ p {
+  color: aqua;
+}
+
+/* Combinador hijo */
+h2 > p {
+  color: green;
+}
+
+/* Combinador descendinte */
+h2 p {
+  color: blueviolet;
+}
