@@ -1,0 +1,95 @@
+.contenedor {
+  display: flex;
+  /* Flex es un tipo de display que permite que
+  el contenedor padre sea flexible a los cambios
+  que puedan tener los elementos hijos en su
+  alineación. */
+
+}
+
+.contenedor .contenedor__hijo--1 {
+  flex-direction: row;
+  /* Te permite elegir la alineación de los elementos
+  hijos sea en vertical (column) u horizontal (row),
+  esta alineación viene por defecto. Estos son los
+  valores mas basicos del flex-direction pero hay muchos
+  otros valores mas que posdemos utilizar */
+
+  justify-content: none;
+  /* Justify-content: Esta propiedad nos permite
+  alinear el contenido segun lo necesitemos pues esta
+  propiedad posee varios valores. A continuacion veremos
+  algunos valores fundamentales y basicos */
+
+  justify-content: flex-start;
+  /* Alinear items del flex desde el comienzo */
+
+  justify-content: flex-end;
+  /* Alinear items desde el final */
+
+  justify-content: center;
+  /* Alinear items en el centro del contenedor */
+
+  justify-content: space-between;
+  /* Esta propiedad distribuye los items uniformemente
+  de la siguiente forma: el primer items lo coloca inicio,
+  el último item lo coloca al final y los divide el espacio 
+  restante entre los demas item del contenedor */
+
+  justify-content: space-around;
+  /* Distribuir items uniformemente, estos tienen el
+  mismo espacio a su alrededor. */
+
+  justify-content: space-evenly;
+  /*  Distribuye uniformemente el espacio entre los items
+  y su alrededor. */
+}
+
+.contenedor .contenedor__hijo--2 {
+  align-items: none;
+  /* Sirve para alinear los elementos hijos */
+
+  align-items: flex-start;
+  /* Se alinean desde arriba. */
+
+  align-items: flex-end;
+  /* Se alinean desde abajo. */
+  
+  align-items: center;
+  /* Alinea los item al centro del eje y del contenedor. */
+
+  align-items: stretch;
+  /* Estira el alto de los elementos hijos al 100% del
+  alto del elemento padre. */
+
+  align-items: baseline;
+  /* Escala el alto del elemento al tamaño de su contenido. */
+}
+
+
+.contenedor .contenedor__hijo--3 {
+  flex-wrap: wrap;
+  /* Permite que un elemento cuyo tamaño sea mayor al de la
+  página haga un salto de línea sin salirse del contenedor,
+  pues este se agranda. */
+}
+
+.contenedor .contenedor__hijo--4 {
+  order: none;
+  /* Especifica el orden utilizado para disponer los elementos
+  en su contenedor flexible. Los elementos estarán dispuestos
+  en orden ascendente según el valor de order. */
+}
+
+.contenedor .contenedor__hijo--5 {
+  flex-grow: none;
+  /* Especifica qué cantidad del espacio restante dentro
+  del contenedor flexible, debería ocupar el ítem en
+  cuestión según su dirección principal, esta última
+  determinada por flex-direction. */
+}
+
+.contenedor .contenedor__hijo--6 {
+  flex-basis: none;
+  /* Especifica el tamaño inicial de un elemento flexible. */
+}

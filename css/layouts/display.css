@@ -1,0 +1,58 @@
+div {
+  display: block;
+  /* En un elemento con display:block el contenido del
+  elemento toma el 100% del width, se puede usar margin
+  y padding por todos los lados. Estos elementos vienen
+  con display: block por defecto:
+    <div>
+    <article>
+    <section>
+    <header>
+    <footer>
+    <aside>
+    <table>
+    <p>
+    <video>
+    <ul>
+    <ol>
+    <h1>
+    <h2>
+    <h3>
+    <h4>
+    <h5>
+    <h6>
+  */
+
+  display: inline;
+  /* En un elemento con display:inline no puedo usar
+  margin ni padding arriba ni abajo, solo derecha e
+  izquierda tampoco se puede aplicar width o height.
+  Esto ocurre porque el elemento se muestra de forma
+  lineal y solo ocupara el espacio necesario por lo que
+  si sobra espacio en el contenedor padre colocara mas
+  elementos al lado. Estos elementos vienen con display: inline
+  por defecto:
+    <a>
+    <span>
+    <img>
+    <b>
+    <i>
+    <small>
+    <cite>
+    <code>
+    <em>
+    <strong>
+    <br>
+    <button>
+    <input>
+    <label>
+    <select>
+    <textarea>
+*/
+
+  display: inline-block;
+  /* En un elemento con display:inline-block, se puede
+  usar margin y padding por todos lados, así como darle
+  width y height ademas el contenido es del mismo tamaño que
+  el elemento. */
+}

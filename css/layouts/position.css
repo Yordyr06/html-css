@@ -1,0 +1,34 @@
+div {
+  position: static;
+  /* Es el valor por defecto. Coloca una posicion
+  estatica a los elementos, esto quiere decir que 
+  cuando se haga scroll los elementos no se moveran
+  con el scroll */
+  
+  position: absolute;
+  /* Con esta valor permanecen en la posición de donde
+  fueron colocados pero pierden su espacio físico
+  (se sobreponen a los elementos que ocupan dicho espacio),
+  se los puede posicionar mediante las propiedades
+  top, right, bottom y left. Importante: Al aplicar
+  las propiedades top, right, bottom y left se tomará
+  de referencia al contenedor más cercano con posición
+  relativa */
+
+  position: relative;
+  /* Conservan su posición original y espacio físico pero
+  se los puede posicionar mediante las propiedades top,
+  right, bottom y left sin perder dicho espacio físico. */
+  
+  position: fixed;
+  /* Pierden su espacio físico y permanecen de forma fija
+  (siguen el scroll, se colocan al lado izquierdo del
+  viewport), se los puede posicionar mediante las
+  propiedades de top, right, bottom y left. */
+  
+  position: sticky;
+  /* Conservan su espacio físico pero cuando el scroll los
+  alcanza lo siguen (sin perder dicho espacio físico), es
+  muy usado para barras de navegación y se lo puede
+  posicionar con las propiedades top, right, bottom y left. */
+}
