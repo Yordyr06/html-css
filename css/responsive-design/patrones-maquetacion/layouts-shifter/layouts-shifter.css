@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {font-size: 62.5%;}
+
+
+.main {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.main__div {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+}
+
+.main__div--first {
+  background-color: #003476;
+}
+
+.main__div--last {
+  background-color: #dfe1e5;
+}
+
+.main__section {
+  width: 100%;
+  min-width: 150px;
+  height: auto;
+  background-color: #d5dfef;
+}
+
+.main__section--div {}
+.main__section--div-1 {
+  background-color: #0062d2;
+}
+
+.main__section--div-2 {
+  background-color: #b4d2f7;  
+}

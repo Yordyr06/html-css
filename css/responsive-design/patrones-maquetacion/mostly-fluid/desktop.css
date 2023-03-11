@@ -1,0 +1,22 @@
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__element--a {
+  width: 60%;
+}
+
+.container__element--b {
+  width: 40%;
+}
+
+.container__element--c,
+.container__element--d {
+  width: 33%;
+}
+
+.container__element--e {
+  width: 34%;
+}

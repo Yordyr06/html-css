@@ -1,0 +1,20 @@
+.main__div--1 {
+  width: 25%;
+}
+
+.main__div--2 {
+  width: 75%;
+  order: 2;
+}
+
+.main__div--3 {
+  order: 3;
+}
+
+.main__div--4 {
+  order: 4;
+}
+
+.main__div--5 {
+  order: 5;
+}

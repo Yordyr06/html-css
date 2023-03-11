@@ -1,0 +1,19 @@
+.main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__div--first {
+  width: 50%;
+  order: 1;
+}
+
+.main__div--last {
+  width: 50%;
+  order: 2;
+}
+
+.main__section {
+  width: 100%;
+}
